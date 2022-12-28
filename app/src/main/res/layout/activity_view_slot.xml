@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ViewSlot"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.02"
+        android:background="#FF6F00"
+        android:gravity="center"
+        android:paddingBottom="20dp"
+        android:text="Slot"
+        android:textColor="#0C0B0B"
+        android:textSize="34sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.02"
+        android:orientation="vertical"
+        android:paddingBottom="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/button4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="#2E7D32"
+                android:text="L1" />
+
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Avaiable Slot"
+                android:textColor="#050505"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/button5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="#C62828"
+                android:text="L2" />
+
+            <TextView
+                android:id="@+id/textView17"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Reserved Slot"
+                android:textColor="#050505"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.8"
+        android:orientation="vertical"
+        android:paddingBottom="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="10dp">
+
+            <Button
+                android:id="@+id/A1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:backgroundTint="#2E7D32"
+                android:onClick="onSlotIdClicked"
+                android:text="A1" />
+
+            <Button
+                android:id="@+id/A2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:backgroundTint="#2E7D32"
+                android:onClick="onSlotIdClicked"
+                android:text="A2" />
+
+            <Button
+                android:id="@+id/A3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:backgroundTint="#2E7D32"
+                android:onClick="onSlotIdClicked"
+                android:text="A3" />
+
+            <Button
+                android:id="@+id/A4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:backgroundTint="#2E7D32"
+                android:onClick="onSlotIdClicked"
+                android:text="A4" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="10dp">
+
+            <Button
+                android:id="@+id/B1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:backgroundTint="#2E7D32"
+                android:onClick="onSlotIdClicked"
+                android:text="B1" />
+
+            <Button
+                android:id="@+id/B2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:backgroundTint="#2E7D32"
+                android:onClick="onSlotIdClicked"
+                android:text="B2" />
+
+            <Button
+                android:id="@+id/B3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:backgroundTint="#2E7D32"
+                android:onClick="onSlotIdClicked"
+                android:text="B3" />
+
+            <Button
+                android:id="@+id/B4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:backgroundTint="#2E7D32"
+                android:onClick="onSlotIdClicked"
+                android:text="B4" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="10dp">
+
+            <Button
+                android:id="@+id/C1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:backgroundTint="#2E7D32"
+                android:onClick="onSlotIdClicked"
+                android:text="C1" />
+
+            <Button
+                android:id="@+id/C2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:backgroundTint="#2E7D32"
+                android:onClick="onSlotIdClicked"
+                android:text="C2" />
+
+            <Button
+                android:id="@+id/C3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:backgroundTint="#2E7D32"
+                android:onClick="onSlotIdClicked"
+                android:text="C3" />
+
+            <Button
+                android:id="@+id/C4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:backgroundTint="#2E7D32"
+                android:onClick="onSlotIdClicked"
+                android:text="C4" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="10dp">
+
+            <Button
+                android:id="@+id/D1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:backgroundTint="#2E7D32"
+                android:onClick="onSlotIdClicked"
+                android:text="D1" />
+
+            <Button
+                android:id="@+id/D2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:backgroundTint="#2E7D32"
+                android:onClick="onSlotIdClicked"
+                android:text="D2" />
+
+            <Button
+                android:id="@+id/D3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:backgroundTint="#2E7D32"
+                android:onClick="onSlotIdClicked"
+                android:text="D3" />
+
+            <Button
+                android:id="@+id/D4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:backgroundTint="#2E7D32"
+                android:onClick="onSlotIdClicked"
+                android:text="D4" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="10dp">
+
+            <Button
+                android:id="@+id/E1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:backgroundTint="#2E7D32"
+                android:onClick="onSlotIdClicked"
+                android:text="E1" />
+
+            <Button
+                android:id="@+id/E2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:backgroundTint="#2E7D32"
+                android:onClick="onSlotIdClicked"
+                android:text="E2" />
+
+            <Button
+                android:id="@+id/E3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:backgroundTint="#2E7D32"
+                android:onClick="onSlotIdClicked"
+                android:text="E3" />
+
+            <Button
+                android:id="@+id/E4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:backgroundTint="#2E7D32"
+                android:onClick="onSlotIdClicked"
+                android:text="E4" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

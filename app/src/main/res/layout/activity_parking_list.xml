@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ParkingList"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <TextView
+        android:id="@+id/selectParking"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        android:layout_weight="0.05"
+        android:background="#FF6F00"
+        android:gravity="center"
+        android:text="Select Parking Location"
+        android:textColor="#090707"
+        android:textSize="24sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        android:layout_weight="0.25"
+        android:background="#0277BD"
+        android:onClick="onClickIbaPark"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/parkingName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sukkur IBA University"
+            android:textColor="#090707"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="130dp"
+                android:layout_height="97dp"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/parklogo"
+                tools:srcCompat="@drawable/parklogo" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/parkingAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Airport Road"
+                    android:textColor="#090707"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/parkingType"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Parking Type: Free"
+                    android:textColor="#090707"
+                    android:textSize="20sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.25"
+        android:background="#81E489"
+        android:onClick="onClickGhantaGharPark"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/parkingName2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Glamor Plaza"
+            android:textColor="#090707"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="130dp"
+                android:layout_height="97dp"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/parklogo"
+                tools:srcCompat="@drawable/parklogo" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/parkingAddress2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Ghanta Ghar Sukkur"
+                    android:textColor="#090707"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/parkingType2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Parking Type: Free"
+                    android:textColor="#090707"
+                    android:textSize="20sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
